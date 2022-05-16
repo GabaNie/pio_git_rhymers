@@ -14,10 +14,12 @@ public class HanoiRhymer extends DefaultCountingOutRhymer {
 		return totalRejected;
 	}
 
+	
 	/**
 	 * @param in potrzebny do sprawdzenia czy jest większy od ostatniego
 	 *           elementu w tablicy
 	 */
+	@Override
 	public void countIn(int in) {
 		if (!callCheck() && in > peekaboo())
 			totalRejected++;
